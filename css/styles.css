@@ -1,0 +1,239 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+
+/* 	CLEARFIX****/
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+/*font face*/
+
+@font-face {
+	font-family: 'Gretoon';
+	src: url('font/Gretoon.eot');
+	src: url('font/Gretoon.eot?#iefix') format('embedded-opentype'),
+ 		url('font/Gretoon.svg') format('svg'),
+ 		url('font/Gretoon.ttf') format('truetype'),
+ 		url('font/Gretoon.woff') format('woff');
+}
+@font-face {
+	font-family: 'HAPPYdave';
+	src: url('font/HAPPYdave.eot');
+	src: url('font/HAPPYdave.eot?#iefix') format('embedded-opentype'),
+ 		url('font/HAPPYdave.svg') format('svg'),
+ 		url('font/HAPPYdave.ttf') format('truetype'),
+ 		url('font/HAPPYdave.woff') format('woff');
+}
+@font-face {
+	font-family: '-TMC-OngDo';
+	src: url('font/-TMC-OngDo.eot');
+	src: url('font/-TMC-OngDo.eot?#iefix') format('embedded-opentype'),
+ 		url('font/-TMC-OngDo.svg') format('svg'),
+ 		url('font/-TMC-OngDo.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'UVNBucThu';
+	src: url('font/UVNBucThu.eot');
+	src: url('font/UVNBucThu.eot?#iefix') format('embedded-opentype'),
+ 		url('font/UVNBucThu.svg') format('svg'),
+ 		url('font/UVNBucThu.ttf') format('truetype'),
+ 		url('font/UVNBucThu.woff') format('woff');
+}
+@font-face {
+	font-family: 'VLAngelline';
+	src: url('font/VLAngelline.eot');
+	src: url('font/VLAngelline.eot?#iefix') format('embedded-opentype'),
+ 		url('font/VLAngelline.svg') format('svg'),
+ 		url('font/VLAngelline.ttf') format('truetype'),
+ 		url('font/VLAngelline.woff') format('woff');
+}
+/* close commented backslash hack */
+/**************** MAIN************/
+/*.container-header{
+	height: 9000px;
+}*/
+.img-center {
+	margin: 0 auto;
+}
+#logo{
+	height: 100px;
+	padding-top: 10px;
+}
+#logo1{
+	margin-top: 5px;
+	font-family: 'VLAngelline';
+	font-size: 30px;
+	color: white;
+    text-shadow: 9px 3px 2px black, 0 0 30px blue, 0 0 30px darkblue;
+    padding-left: 30px;
+    padding-top: auto;
+    text-decoration: none;
+}
+#logo2{
+	float: left;
+}
+#burn{
+	margin-left: auto;
+	margin-right: auto;
+}
+#light{
+	margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#carouesel01{
+	padding-bottom: 50px;
+}
+#css301{
+	height: 600px;
+	padding-bottom: 20px;
+}
+#css3{
+    width: 370px;
+    height: 270px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {/*background-color:red;*/ left:0px; top:0px;}
+    25%  {/*background-color:yellow;*/ left:800px; top:0px;}
+    50%  {/*background-color:blue;*/ left:800px; top:200px;}
+    75%  {/*background-color:green;*/ left:0px; top:200px;}
+    100% {/*background-color:red;*/ left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {/*background-color:red;*/ left:0px; top:0px;}
+    25%  {/*background-color:yellow;*/ left:800px; top:0px;}
+    50%  {/*background-color:blue;*/ left:800px; top:200px;}
+    75%  {/*background-color:green; */left:0px; top:200px;}
+    100% {/*background-color:red; */left:0px; top:0px;}
+}
+}
+#footer01{
+	margin: 0 auto;
+}
+.doraemon {
+	font-family: 'Gretoon';
+	font-size: 20px;
+	text-align: center;
+	color: red;
+	padding-bottom: 15px;
+}
+.p1 {
+	padding-top: 7px;
+	font-family: 'VLAngelline';
+	font-size: 20px;
+	color: green;
+}
+
+.p2 {
+	font-family: 'VLAngelline';
+	color: orange;
+	font-size: 15px;
+}
+
+#footer02{
+	margin-left: 380px;
+}
+#last{
+	padding-bottom: 25px;
+	padding-left: 600px;
+}
+#borderimg { 
+	color: yellow;
+    border: 25px solid transparent;
+    padding-left: 5px;
+/*    padding: 15px;*/
+	padding-top: 15px;
+	padding-bottom: 15px;
+    -webkit-border-image: url('../images/50-.png') 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url('../images50.png/') 30 stretch; /* Opera 11-12.1 */
+    border-image: url('../images/50.png') 35 stretch;
+}
+.p2 {
+	font-family: 'UVNBucThu';
+	color: blue;
+	font-size: 55px;
+
+}
+#p3{
+	font-family: 'VLAngelline';
+	color: yellow;
+	line-height: 25px;
+}
